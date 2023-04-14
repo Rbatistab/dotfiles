@@ -9,6 +9,9 @@
 "               
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""  
 
+" Reference is this url
+" https://www.freecodecamp.org/news/vimrc-configuration-guide-customize-your-vim-editor/  
+
 " Disable compatibility with vi which can cause unexpected issues.
 set nocompatible
 
@@ -34,10 +37,10 @@ set cursorline
 set cursorcolumn
 
 " Set shift width to 4 spaces.
-set shiftwidth=4
+set shiftwidth=2
 
 " Set tab width to 4 columns.
-set tabstop=4
+set tabstop=2
 
 " Use space characters instead of tabs.
 set expandtab
@@ -64,4 +67,26 @@ set wildmode=list:longest
 " Wildmenu will ignore files with these extensions.
 set wildignore=*.docx,*.jpg,*.png,*.gif,*.pdf,*.pyc,*.exe,*.flv,*.img,*.xlsx
 
+" Plugins --- {{{
 
+call plug#begin('~/.vim/plugged')
+
+" General
+
+  Plug 'dense-analysis/ale'
+  Plug 'preservim/nerdtree'
+
+" For Rust
+" https://blog.logrocket.com/configuring-vim-rust-development/
+ Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
+
+call plug#end()
+
+" }}}
+
+" Mappings --- {{{
+
+
+
+"}}}
