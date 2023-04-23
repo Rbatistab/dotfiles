@@ -32,6 +32,7 @@ Plug 'https://github.com/ryanoasis/vim-devicons'				" vim-devicoms
 Plug 'https://github.com/neoclide/coc.nvim/'						" coc.vim
 
 " Rust stuff:
+" https://blog.logrocket.com/configuring-vim-rust-development/#coc-rust-analyzer
 Plug 'https://github.com/rust-lang/rust-analyzer'				"	rust-analyzer
 Plug 'https://github.com/rust-lang/rust.vim'						"	rust.vim
 Plug 'https://github.com/fannheyward/coc-rust-analyzer'	" coc-rust-analyzer
