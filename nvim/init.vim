@@ -30,6 +30,7 @@ Plug 'https://github.com/preservim/tagbar'							" Tagbar for code navigation
 Plug 'https://github.com/terryma/vim-multiple-cursors'	" CTRL + N for multiple cursors
 Plug 'https://github.com/ryanoasis/vim-devicons'				" vim-devicoms
 Plug 'https://github.com/neoclide/coc.nvim/'						" coc.vim
+Plug 'https://github.com/iamcco/markdown-preview.nvim'	" markdown-preview.nvim
 
 " Rust stuff:
 " https://blog.logrocket.com/configuring-vim-rust-development/#coc-rust-analyzer

@@ -22,6 +22,16 @@
 yarn install
 yarn build
 ```
+1. For `markdown-preview.nvim` [run](https://github.com/iamcco/markdown-preview.nvim) (use node version 16.20.0):
+```
+mkdir -p pack/packer/start
+cd pack/packer/start
+git clone https://github.com/iamcco/markdown-preview.nvim.git
+cd markdown-preview.nvim
+yarn install
+yarn build
+```
+
 
 Interesting cofigs from others:
 * https://github.com/NeuralNine/config-files/blob/master/init.vim
