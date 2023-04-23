@@ -17,6 +17,11 @@
 1. Close or source the file
 1. Install [VimPlug](https://github.com/junegunn/vim-plug#neovim)
 1. Open `vim.init` and run `:PlugInstall`
+1. For `coc.vim` go to `~/.local/share/nvim/plugged/coc.nvim` and [run](https://github.com/neoclide/coc.nvim/issues/3258):
+```
+yarn install
+yarn build
+```
 
 Interesting cofigs from others:
 * https://github.com/NeuralNine/config-files/blob/master/init.vim
