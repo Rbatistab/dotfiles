@@ -17,6 +17,7 @@
 
 " Add numbers to the file.
 :set number
+:set relativenumber
 :set autoindent
 " Highlight cursor line underneath the cursor horizontally.
 :set cursorline
