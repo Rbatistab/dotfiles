@@ -9,7 +9,9 @@ nmap <F8> :TagbarToggle<CR>
 
 :set completeopt-=preview " For No Previews
 
-:colorscheme jellybeans
+:set termguicolors
+let ayucolor="mirage"
+:colorscheme ayu 
 
 " air-line
 let g:airline_powerline_fonts = 1
