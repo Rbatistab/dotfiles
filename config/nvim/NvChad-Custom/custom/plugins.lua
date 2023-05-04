@@ -1,5 +1,5 @@
 local plugins = {
--- nvim-treesitter 
+-- nvim-treesitter - https://github.com/nvim-treesitter/nvim-treesitter 
   {
     "nvim-treesitter/nvim-treesitter",
     opts = {
@@ -27,7 +27,7 @@ local plugins = {
     },
   },
 
--- lspconfig
+-- lspconfig - https://github.com/neovim/nvim-lspconfig
   {
     "neovim/nvim-lspconfig",
     dependencies = {
@@ -43,6 +43,42 @@ local plugins = {
     end,
   },
 
+-- mason - https://github.com/williamboman/mason.nvim
+  {
+    "williamboman/mason.nvim",
+    opts = {
+      ensure_installed = {
+        "rust-analyzer",
+      },
+    },
+  },
+
+-- rust.vim - https://github.com/rust-lang/rust.vim
+  {
+    "rust-lang/rust.vim",
+    ft = "rust",
+    init = function() -- Required to initiate lua file
+      vim.g.rustfmt_autosave = 1 -- autoformating on save
+    end
+  },
+
+-- rust-tools - https://github.com/simrat39/rust-tools.nvim
+  {
+    "simrat39/rust-tools.nvim",
+    ft    = "rust",
+    dependencies  = "neovim/nvim-lspconfig",
+    opts  = function ()
+      return require "custom.configs.rust-tools"
+    end,
+    config  = function (_, opts)
+      require('rust-tools').setup(opts)
+    end
+  },
+
+-- nvim-dap - https://github.com/mfussenegger/nvim-dap
+  {
+    "mfussenegger/nvim-dap",
+  },
 }
 
 return plugins

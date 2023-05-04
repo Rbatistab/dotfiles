@@ -2,8 +2,10 @@
 
 ## For NvChad
 1. Follow the [installation guides](https://nvchad.com/docs/quickstart/install)
-2. Copy the customs dir and that's it
+1. Install lldb by running `sudo apt install lldb`
+1. Copy the customs dir
+1. Close and open again and run `:MasonInstallAll`
 
 ## For old config
 1. Install [vim-plug](https://github.com/junegunn/vim-plug)
-2. Install the pluggins by running `:PlugInstall`
+1. Install the pluggins by running `:PlugInstall`
