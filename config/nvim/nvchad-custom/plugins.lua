@@ -79,6 +79,15 @@ local plugins = {
   {
     "mfussenegger/nvim-dap",
   },
+
+-- blamer.nvim - https://github.com/APZelos/blamer.nvim
+  {
+    "APZelos/blamer.nvim",
+    opts = function ()
+      require "custom.configs.blamer-nvim"
+    end,
+  }
+
 }
 
 return plugins
