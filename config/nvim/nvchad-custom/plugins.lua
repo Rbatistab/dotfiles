@@ -80,6 +80,28 @@ local plugins = {
     end
   },
 
+-- crates.nvim - https://github.com/Saecki/crates.nvim
+  {
+    "Saecki/crates.nvim",
+    ft  = {"rust", "toml"},
+    config = function (_, opts)
+      local crates = require('crates')
+      crates.setup(opts)
+      crates.show()
+    end
+  },
+
+-- nvim-cmp (autcompletion) - https://github.com/hrsh7th/nvim-cmp
+  {
+    "hrsh7th/nvim-cmp",
+    opts = function ()
+      local M = require "plugins.configs.cmp" 
+      -- For cargo autocompletion, combine with crates.nvim
+      table.insert(M.sources, {name = "crates"})
+      return M
+    end
+  },
+
 -- scalameta/nvim-metals - https://github.com/scalameta/nvim-metals
   {
     "scalameta/nvim-metals",
