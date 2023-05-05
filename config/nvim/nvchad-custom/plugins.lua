@@ -49,6 +49,11 @@ local plugins = {
     opts = {
       ensure_installed = {
         "rust-analyzer",
+        "bash-language-server",
+        "java-language-server",
+        "quick_lint_js",
+        "js-debug-adapter",
+        "json-lsp",
       },
     },
   },
@@ -75,6 +80,12 @@ local plugins = {
     end
   },
 
+-- scalameta/nvim-metals - https://github.com/scalameta/nvim-metals
+  {
+    "scalameta/nvim-metals",
+    ft = "scala",
+  },
+
 -- nvim-dap - https://github.com/mfussenegger/nvim-dap
   {
     "mfussenegger/nvim-dap",
@@ -83,9 +94,9 @@ local plugins = {
 -- blamer.nvim - https://github.com/APZelos/blamer.nvim
   {
     "APZelos/blamer.nvim",
-    opts = function ()
-      require "custom.configs.blamer-nvim"
-    end,
+    -- opts = function ()
+    --   require "custom.configs.blamer-nvim"
+    -- end,
   }
 
 }
