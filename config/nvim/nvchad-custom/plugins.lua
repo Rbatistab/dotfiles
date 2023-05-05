@@ -51,7 +51,7 @@ local plugins = {
         "rust-analyzer",
         "bash-language-server",
         "java-language-server",
-        "quick_lint_js",
+        "quick-lint-js",
         "js-debug-adapter",
         "json-lsp",
       },

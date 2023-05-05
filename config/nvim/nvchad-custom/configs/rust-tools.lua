@@ -8,3 +8,4 @@ local options = {
   }
 }
 
+return options
