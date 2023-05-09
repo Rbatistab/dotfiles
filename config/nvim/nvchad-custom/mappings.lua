@@ -13,6 +13,12 @@ local M = {}
 --   }
 -- }
 
+M.general = {
+  i = {
+    ["jkjk"] = {"<ESC>", "Escape insert mode"}
+  }
+}
+
 M.dap = {
   n = {
     ["<leader>db"] = {
