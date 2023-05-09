@@ -15,7 +15,7 @@ local M = {}
 
 M.general = {
   i = {
-    ["jkjk"]  = { "<ESC>", "Escape insert mode" },
+    ["jj"]  = { "<ESC>", "Escape insert mode" },
     ["<C-s>"]   = { "<cmd> w <CR>", "Save file" };
   }
 }
