@@ -1,25 +1,26 @@
 #!/bin/bash
 
 ###############################################################################
-#                               Script updates                                #
+#                               NvChad updates                                #
 ###############################################################################
 
 ###############################################################################
-# Updates from local scripts to dotfiles package and viceversa
+# Updates from local nvChad to dotfiles package and viceversa
 ###############################################################################
 
-PACKAGE_SCRIPTS_DIR="${DOTFILES_PACKAGE_DIR}/scripts"
+PACKAGE_NVCHAD_DIR="${DOTFILES_PACKAGE_DIR}/config/nvim/nvchad-custom"
+LOCAL_NVCHAD_DIR="${HOME}/.config/nvim/lua/custom"
 
-scripts_package_to_local() {
-  mkdir -p ${MY_SCRIPTS_DIR}
+nvchad_package_to_local() {
   echo "Copying files from package to local..."
-  cp -r ${PACKAGE_SCRIPTS_DIR}/* ${MY_SCRIPTS_DIR}
+  cp -r ${PACKAGE_NVCHAD_DIR}/* ${LOCAL_NVCHAD_DIR}
   echo "Done!"
 }
 
-scripts_local_to_package() {
+nvchad_local_to_package() {
   echo "Copying files from local to package..."
-  cp -r ${MY_SCRIPTS_DIR}/* ${PACKAGE_SCRIPTS_DIR}
+  cp -r ${LOCAL_NVCHAD_DIR}/* ${PACKAGE_NVCHAD_DIR}
   echo "Done!"
 }
+
 
