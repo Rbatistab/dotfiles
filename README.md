@@ -1,5 +1,7 @@
 # My configs:
 
+*Heads up*: **This package should better go to `~/Projects/dotfiles` unless you want to modify the dir paths for the scripts**
+
 ## zshrc
 [TBD]
 

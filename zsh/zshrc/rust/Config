@@ -1,0 +1,4 @@
+#!/bin/bash
+
+# Setup RUST environment setting in zsh - https://www.rust-lang.org/tools/install
+source /home/dell/.cargo/env

@@ -1,0 +1,7 @@
+#!/bin/bash
+
+# Autosuggestions
+source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+# Keybindings
+bindkey -v 
