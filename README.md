@@ -2,41 +2,52 @@
 
 *Heads up*: **This package should better go to `~/Projects/dotfiles` unless you want to modify the dir paths for the scripts**
 
-## zshrc
-[TBD]
+### Don't forget to do this(will mess the scripts and aliases if you do):
+
+```
+export MY_SCRIPTS_DIR="${HOME}/scripts"
+export DOTFILES_PACKAGE_DIR="${HOME}/Projects/dotfiles"
+```
+
+### Zsh
+
+#### Copy all the zsh files from local to package and viceversa?
+
+
+```
+source_zsh_updates # source the zsh updates scripts if already in local
+source ${DOTFILES_PACKAGE_DIR}/scripts/zsh_updates.sh # source the same but from package
+```
+* `backup_zsh`: Backup zsh config to `~/zsh-backup/`
+* `zsh_package_to_local`: Copy(override) files from package to local
+* `zsh_local_to_package`: Copy(override) files from local to package
+* `clean_zsh_backups`: Clean `~/zsh-backup`
+
+Also create `zshrc/noGit/foo/Config` dirs to have anything that you could use local but don't want in a public package
+
+### NvChad
+
+#### NvChad from local config to package?
+
+```
+source_nvchad_updates # source the nvchad updates scripts if already in local
+source ${DOTFILES_PACKAGE_DIR}/scripts/nvchad_updates.sh # source the same but from package
+```
+* `nvchad_package_to_local`: Copy(override) files from package to local
+* `nvchad_local_to_package`: Copy(override) files from local to package
+
+#### Scripts from package config to local?
+
+```
+source_scripts_updates # source the script updates scripts if already in local
+source ${DOTFILES_PACKAGE_DIR}/scripts/scripts_updates.sh # source the same but from package
+```
+* `scripts_package_to_local`: Copy(override) files from package to local
+* `scripts_local_to_package`: Copy(override) files from local to package
+
 
 ## vimrc
-
-1. Copy the contents from `vim/.vimrc` to your PC
-1. Close or source the file
-1. Install [VimPlug](https://github.com/junegunn/vim-plug#vim)
-1. Open `.vimrc` and run `:PlugInstall`
-
-## nvim
-
-1. Run `sudo apt install neovim`
-1. Create `~/.config/nvim` dir and copy the `nvim/init.vim` file
-1. Close or source the file
-1. Install [VimPlug](https://github.com/junegunn/vim-plug#neovim)
-1. Open `vim.init` and run `:PlugInstall`
-1. For `coc.vim` go to `~/.local/share/nvim/plugged/coc.nvim` and [run](https://github.com/neoclide/coc.nvim/issues/3258):
-```
-yarn install
-yarn build
-```
-1. For `markdown-preview.nvim` [run](https://github.com/iamcco/markdown-preview.nvim) (use node version 16.20.0):
-```
-mkdir -p pack/packer/start
-cd pack/packer/start
-git clone https://github.com/iamcco/markdown-preview.nvim.git
-cd markdown-preview.nvim
-yarn install
-yarn build
-```
-
-
-Interesting cofigs from others:
-* https://github.com/NeuralNine/config-files/blob/master/init.vim
+[TBD]
 
 ## tmux
 
