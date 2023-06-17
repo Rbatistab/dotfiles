@@ -8,3 +8,5 @@ source ~/Packages/powerlevel10k/powerlevel10k.zsh-theme
 # Shut off annoying message
 typeset -g POWERLEVEL9K_INSTANT_PROMPT=off
 
+# Set p10K theme
+ZSH_THEME="powerlevel10k/powerlevel10k"

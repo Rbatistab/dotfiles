@@ -51,4 +51,4 @@ zsh_local_to_package() {
 # Clean backup files
 clean_zsh_backups() {
   rm -rf ${ZSH_BACKUP_DIR}
-
+}
