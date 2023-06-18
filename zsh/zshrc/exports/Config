@@ -1,11 +1,5 @@
 #!/bin/bash
 
-# My scripts
-export MY_SCRIPTS_DIR="${HOME}/scripts"
-
-# My dotfiles package
-export DOTFILES_PACKAGE_DIR="${HOME}/Projects/dotfiles"
-
 # NVM
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
