@@ -7,5 +7,8 @@
 --                   ╚═╝  ╚═╝  ╚═══╝  ╚═╝╚═╝     ╚═╝
 ----------------------------------------------------------------------------  
 
+-- My screen config 
 vim.wo.relativenumber = true
--- vim.opt.colorcolumn   = "100"
+
+-- Launch nvim with nvitree
+-- vim.api.nvim-tree-api.tree.open()

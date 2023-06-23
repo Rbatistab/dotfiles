@@ -25,9 +25,11 @@ source ${DOTFILES_PACKAGE_DIR}/scripts/zsh_updates.sh # source the same but from
 
 Also create `zshrc/noGit/foo/Config` dirs to have anything that you could use local but don't want in a public package
 
-### NvChad
+### Neovim
 
 #### NvChad from local config to package?
+
+If you are using [nvchad](https://nvchad.com/docs/quickstart/install) be sure to move [nvim 0.9.0](https://github.com/neovim/neovim/releases/tag/v0.9.1) to `~/.local/bin/` and create a symbolic link, like `ln -s $HOME/.local/bin/nvim.appimage $HOME/.local/bin/nvim`
 
 ```
 source_nvchad_updates # source the nvchad updates scripts if already in local

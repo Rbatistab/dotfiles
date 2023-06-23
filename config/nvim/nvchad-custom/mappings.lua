@@ -1,3 +1,5 @@
+-- n, v, i, t = mode names
+
 local M = {}
 
 -- M.comment = {
@@ -15,9 +17,26 @@ local M = {}
 
 M.general = {
   i = {
+    -- universal exit
+    ["qqq"] = { "<ESC> :q <CR>", "Exit" },
     ["jj"]  = { "<ESC>", "Escape insert mode" },
     ["<C-s>"]   = { "<cmd> w <CR>", "Save file" };
+  },
+
+  n = {
+    -- universal exit
+    ["qqq"] = { "<ESC> :q <CR>", "Exit" };
+  },
+
+  v = {
+    -- universal exit
+    ["qqq"] = { "<ESC> :q <CR>", "Exit" };
+  },
+
+  t = {
+    ["<C-P>"] = { vim.api.nvim_replace_termcodes("<C-\\><C-N>", true, true, true), "escape terminal mode" },
   }
+
 }
 
 M.dap = {
