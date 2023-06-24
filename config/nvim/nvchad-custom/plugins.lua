@@ -119,6 +119,12 @@ local plugins = {
     -- opts = function ()
     --   require "custom.configs.blamer-nvim"
     -- end,
+  },
+
+-- tmux
+  {
+    "christoomey/vim-tmux-navigator",
+    lazy = false,
   }
 
 }
