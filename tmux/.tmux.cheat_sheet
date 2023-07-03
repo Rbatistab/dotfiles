@@ -1,0 +1,34 @@
+Prefix remap:
+<prefix> -> C-space
+
+Navigation:
+Window left -> shift - alt - h
+Window right -> shift - alt - l
+Pane navigation -> <prefix> - Arrow
+Pane navigation -> C-h/C-j/C-k/C-l
+
+Windows:
+New window -> <prefix> - c
+Close window -> <prefix> - &
+Next window -> <prefix> - n
+Prev window -> <prefix> - p
+Got to window # -> <prefix> - #
+Last active window -> <ldr> - l
+Last active pane -> <ldr> - ;
+Preview windows for each session -> <prefix> - w
+
+Panes:
+Split horizontal -> <prefix> - %
+Split vertical -> <prefix> - "
+Resize pane -> <prefix> - Arrow(holding prefix)
+Move among panes -> <prefix> - { or }
+Navigation by number (panes) -> <prefix> - q
+Zoom/un-zoom a pane to the whole window -> <prefix> - z
+Turn pane into a window -> <prefix> - !
+Close pane -> <prefix> - x
+
+Sessions:
+Rename session -> <prefix> - ,
+List sessions -> <prefix> - s
+
+https://tmuxcheatsheet.com/

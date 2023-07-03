@@ -27,6 +27,7 @@ alias source_scripts_updates="source ${MY_SCRIPTS_DIR}/scripts_updates.sh"
 alias source_tmux_updates="source ${MY_SCRIPTS_DIR}/tmux_updates.sh"
 alias source_zsh='source ${HOME}/.zshrc'
 alias sts='git status'
+alias tmux_cheat_sheet='cat ${DOTFILES_PACKAGE_DIR}/tmux/.tmux.cheat_sheet'
 alias upd='sudo apt update'
 alias upg='sudo apt upgrade'
 alias vim_zsh='vim ${HOME}/.zshrc'
