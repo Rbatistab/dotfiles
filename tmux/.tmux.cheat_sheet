@@ -31,4 +31,8 @@ Sessions:
 Rename session -> <prefix> - ,
 List sessions -> <prefix> - s
 
+Yanking:
+Enter copy mode -> prefix + [
+Yank -> y
+
 https://tmuxcheatsheet.com/
