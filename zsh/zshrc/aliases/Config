@@ -3,11 +3,14 @@
 # Usefull aliases as shortcuts
 alias armv='sudo apt autoremove'
 alias bckt='git checkout -b '
+alias cb="cargo build"
 alias cd.='code .'
 alias cd_dotfiles='cd ${DOTFILES_PACKAGE_DIR}'
 alias cd_scripts='cd ${MY_SCRIPTS_DIR}'
 alias ckt='git checkout '
 alias cmt='git commit -m'
+alias cn="cargo new"
+alias cr="cargo run"
 alias dff='git diff'
 alias dotfiles='cd ${DOTFILES_PACKAGE_DIR} && nvim'
 alias gadd='git add'
