@@ -8,6 +8,7 @@ alias cd.='code .'
 alias cd_dotfiles='cd ${DOTFILES_PACKAGE_DIR}'
 alias cd_scripts='cd ${MY_SCRIPTS_DIR}'
 alias ckt='git checkout '
+alias clr='clear'
 alias cmt='git commit -m'
 alias cn="cargo new"
 alias cr="cargo run"

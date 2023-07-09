@@ -9,6 +9,3 @@
 
 -- My screen config 
 vim.wo.relativenumber = true
-
--- Launch nvim with nvitree
--- vim.api.nvim-tree-api.tree.open()

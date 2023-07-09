@@ -20,12 +20,22 @@ local plugins = {
         "markdown",
         "python",
         -- "scala",
-        "java",
+        -- "java",
+        "json",
         -- "html",
         -- "css",
       },
     },
   },
+
+-- nvim-tree custom
+  -- {
+  --   "nvim-treesitter/nvim-treesitter",
+  --   opts = function()
+  --     return require "custom.configs.nvimtree"
+  --   end,
+  -- },
+
 
 -- lspconfig - https://github.com/neovim/nvim-lspconfig
   {
@@ -48,12 +58,16 @@ local plugins = {
     "williamboman/mason.nvim",
     opts = {
       ensure_installed = {
-        "rust-analyzer",
         "bash-language-server",
         "java-language-server",
-        "quick-lint-js",
+        "lua-language-server",
         "js-debug-adapter",
+        "rust-analyzer",
+        "quick-lint-js",
+        "markdownlint",
+        "luau-lsp",
         "json-lsp",
+        "prettier",
       },
     },
   },
