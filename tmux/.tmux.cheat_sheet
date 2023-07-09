@@ -30,6 +30,8 @@ Close pane -> <prefix> - x
 Sessions:
 Rename session -> <prefix> - ,
 List sessions -> <prefix> - s
+Save session -> <prefix> - C-s
+Restore session -> <prefix> - C-r
 
 Yanking:
 Enter copy mode -> prefix + [
