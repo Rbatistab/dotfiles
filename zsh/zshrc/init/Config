@@ -6,5 +6,5 @@ source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 # Keybindings
 bindkey -v 
 bindkey -r '^L' # unbind ctrl-l for clear screen
-bindkey '\eg' clear-screen # re-bind it to alt-g
+bindkey '\el' clear-screen # re-bind it to alt-g
 
