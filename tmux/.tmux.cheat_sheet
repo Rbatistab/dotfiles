@@ -36,5 +36,6 @@ Restore session -> <prefix> - C-r
 Yanking:
 Enter copy mode -> prefix + [
 Yank -> y
+Exit copy mode -> Enter
 
 https://tmuxcheatsheet.com/
