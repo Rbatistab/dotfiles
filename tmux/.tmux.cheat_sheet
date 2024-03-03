@@ -32,6 +32,8 @@ Rename session -> <prefix> - ,
 List sessions -> <prefix> - s
 Save session -> <prefix> - C-s
 Restore session -> <prefix> - C-r
+Kill all sessions -> tmux kill-server
+Kill all sessions but current -> tmux kill-session -a
 
 Yanking:
 Enter copy mode -> prefix + [

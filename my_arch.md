@@ -164,7 +164,13 @@ tmux source ~/.tmux.conf
 remove old .zshrc files
 
 
-
+# KDE changes:
+* Hide title bars:
+  * Under `~/.config/kmixrc` add this:
+  ```
+  [Windows]
+  BorderlessMaximizedWindows=true
+  ```
 
 
 # Utils
