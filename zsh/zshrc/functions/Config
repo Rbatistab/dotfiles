@@ -1,7 +1,0 @@
-#!/bin/bash
-
-source_scripts() {
-  for SCRIPT in ${MY_SCRIPTS_DIR}/*; do
-    source $SCRIPT
-  done
-}
