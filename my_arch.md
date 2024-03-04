@@ -6,7 +6,16 @@ Post install (as in your own wiki)
   - `chsh $(which zsh)`
   - `usermod -s $(which zsh) root` (zsh to root's default)
 3. [New user]():
-  - `useradd -m -G wheel -s $(which zsh) <username>` (don't capitalize <username>, it's odd to read)
+    ```
+    useradd -m -G wheel -s $(which zsh) <username> # (don't capitalize <username>, it's odd to read)
+    sudo passwd --lock root # https://wiki.archlinux.org/title/Security#Restricting_root
+
+    # Enforce delay afte failed login:
+    sudo vim /etc/pacman.d/system-login
+    # Add this line:
+    #auth optional pam_faildelay.so delay=4000000
+
+    ```
   - `-m`: give it a home
   - `-G wheel` add to wheel group
   - As root, modify `etc/sudoers` to uncomment this line and give sudo to the wheelers
@@ -166,11 +175,16 @@ remove old .zshrc files
 
 # KDE changes:
 * Hide title bars:
-  * Under `~/.config/kmixrc` add this:
-  ```
-  [Windows]
-  BorderlessMaximizedWindows=true
-  ```
+    * Under `~/.config/kmixrc` add this:
+    ```
+    [Windows]
+    BorderlessMaximizedWindows=true
+    ```
+* Make a [better desktop UX](https://www.youtube.com/watch?v=HuDlKH795XM&t=154s)
+    ```
+    yay -S latte-dock
+    ```
+
 
 
 # Utils
@@ -188,12 +202,20 @@ makepkg -si notion-app-electron
 ```
 * [Notion calendar](https://aur.archlinux.org/packages/notion-calendar-electron)
 ```
-git clone https://aur.archlinux.org/packages/notion-calendar-electron
-cd notion-calendar-electron
-makepkg -si notion-calendar-electron
+sudo snap install notion-calendar-snap
 ```
 * [lazygit](https://github.com/jesseduffield/lazygit)
 ```
 pacman -S lazygit
+```
+* [yay](https://aur.archlinux.org/packages/yay) (AUR)
+```
+git clone https://aur.archlinux.org/yay.git
+cd yay
+makepkg -si
+```
+* [Freecad](https://wiki.freecad.org/Installing_on_Linux#Arch)
+```
+sudo pacman -S freecad
 ```
 

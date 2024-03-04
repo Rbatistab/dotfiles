@@ -10,17 +10,15 @@ local plugins = {
         "bash",
 
         -- favs 
-        "c",
-        "cpp",
+        -- "c",
+        -- "cpp",
         "rust",
 
         -- utils
-        -- "typescript",
+        "typescript",
         "javascript",
         "markdown",
         "python",
-        -- "scala",
-        -- "java",
         "json",
         -- "html",
         -- "css",
@@ -114,12 +112,6 @@ local plugins = {
       table.insert(M.sources, {name = "crates"})
       return M
     end
-  },
-
--- scalameta/nvim-metals - https://github.com/scalameta/nvim-metals
-  {
-    "scalameta/nvim-metals",
-    ft = "scala",
   },
 
 -- nvim-dap - https://github.com/mfussenegger/nvim-dap
