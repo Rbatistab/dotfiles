@@ -19,6 +19,9 @@ for DIR in ${ZSHRC_DIR}/*; do
   source ${DIR}/Config
 done
 
+# Source out-of-git env variables:
+source ~/.private-env
+
 # Auto-start tmux
 if [ -n "$PS1" ] && [ -z "$TMUX" ]; then
   tmux new-session -A -s main

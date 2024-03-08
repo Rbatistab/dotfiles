@@ -1,6 +1,12 @@
 # My configs:
 
-*Heads up*: **This package should better go to `~/Projects/dotfiles` unless you want to modify the dir paths for the scripts**
+### First:
+
+* Clone this package to: `~/Projects/dotfiles` (unless you want to modify the dir paths for the scripts)
+* Create file `~/.private-env` and add `SSH_KEY`:
+```
+export SSH_KEY=`<my-ssh-key>`
+```
 
 ### Don't forget to do this(will mess the scripts and aliases if you do):
 

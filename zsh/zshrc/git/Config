@@ -1,5 +1,4 @@
 #!/bin/bash
 
-# ssh for git
-# ssh-add
-# ssh-add ~/.ssh/my_projects_ed25519
+eval `ssh-agent -s`
+ssh-add ${SSH_KEY}
