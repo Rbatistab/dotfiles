@@ -163,6 +163,7 @@ tmux_package_to_local
 # source:
 source ~/.zshrc
 tmux source ~/.tmux.conf
+# Execute '<tmux-prefix> + I' to install tmux plugins
 ```
 
 ## Now let's pump nvim
