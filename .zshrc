@@ -14,7 +14,7 @@ export MY_SCRIPTS_DIR="${HOME}/scripts"
 export DOTFILES_PACKAGE_DIR="${HOME}/Projects/dotfiles"
 
 # Source of Config files under 'zshrc'
-ZSHRC_DIR="${HOME}/zshrc"
+ZSHRC_DIR="${HOME}/.zsh_config"
 for DIR in ${ZSHRC_DIR}/*; do
   source ${DIR}/Config
 done
