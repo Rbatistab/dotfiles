@@ -9,11 +9,11 @@
 ###############################################################################
 
 # zsh config files
+PACKAGE_ZSHRC_FILE="${DOTFILES_PACKAGE_DIR}/.zshrc"
+PACKAGE_ZSHRC_DIR="${DOTFILES_PACKAGE_DIR}/.zsh_config"
 LOCAL_ZSHRC_FILE="${HOME}/.zshrc"
-PACKAGE_ZSHRC_FILE="${DOTFILES_PACKAGE_DIR}/zsh/.zshrc"
-LOCAL_ZSHRC_DIR="${HOME}/zshrc"
-PACKAGE_ZSHRC_DIR="${DOTFILES_PACKAGE_DIR}/zsh/zshrc"
-ZSH_BACKUP_DIR="${HOME}/zsh-backup"
+LOCAL_ZSHRC_DIR="${HOME}/.zsh_config"
+ZSH_BACKUP_DIR="${HOME}/zsh_backup"
 
 # Backup current zsh config
 backup_zsh() {
