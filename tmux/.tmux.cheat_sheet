@@ -1,6 +1,9 @@
 Prefix remap:
 <prefix> -> C-space
 
+Pugins:
+Install plugins -> <leader> - I
+
 Navigation:
 Window left -> shift - alt - h
 Window right -> shift - alt - l
