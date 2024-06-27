@@ -22,6 +22,9 @@ local plugins = {
         "json",
         -- "html",
         -- "css",
+
+        -- Smithy model
+        "smithy",
       },
     },
   },
@@ -131,7 +134,16 @@ local plugins = {
   {
     "christoomey/vim-tmux-navigator",
     lazy = false,
-  }
+  },
+
+-- markdown.nvim
+  {
+    "tadmccorkle/markdown.nvim",
+    ft = "markdown", -- or 'event = "VeryLazy"'
+    opts = {
+    -- configuration here or empty for defaults
+    }
+  },
 
 }
 
