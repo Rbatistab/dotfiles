@@ -9,3 +9,6 @@
 
 -- My screen config 
 vim.wo.relativenumber = true
+
+-- Try to fix clipboard
+vim.opt.clipboard = "unnamedplus"
