@@ -15,7 +15,7 @@ LOCAL_IDEAVIMRC_FILE="${HOME}/.ideavimrc"
 PACKAGE_NVCHAD_DIR="${DOTFILES_PACKAGE_DIR}/config/nvim/nvchad-custom"
 LOCAL_NVCHAD_DIR="${HOME}/.config/nvim/lua/custom"
 
-nvchad_package_to_local() {
+neovim_and_vim_package_to_local() {
   echo "Copying '.vimrc' file..."
   cp -r ${PACKAGE_VIMRC_FILE} ${LOCAL_VIMRC_FILE} 
 
@@ -27,7 +27,7 @@ nvchad_package_to_local() {
   echo "Done!"
 }
 
-nvchad_local_to_package() {
+neovim_and_vim_local_to_package() {
   echo "Copying '.vimrc' file..."
   cp -r ${LOCAL_VIMRC_FILE} ${PACKAGE_VIMRC_FILE} 
 
