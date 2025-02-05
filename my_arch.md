@@ -146,11 +146,11 @@ sudo pacman -S lazygit
 ```
 * Copy the dotfiles and run the scripts
 ```
-mkdir --p ~/Projects
-cd ~/Projects/
+mkdir --p ~/workspace
+cd ~/workspace/
 git clone git@github.com:Rbatistab/dotfiles.git
 export MY_SCRIPTS_DIR="${HOME}/scripts"
-export DOTFILES_PACKAGE_DIR="${HOME}/Projects/dotfiles"
+export DOTFILES_PACKAGE_DIR="${HOME}/workspace/dotfiles"
 # Scripts:
 source ${DOTFILES_PACKAGE_DIR}/scripts/scripts_updates.sh
 scripts_package_to_local

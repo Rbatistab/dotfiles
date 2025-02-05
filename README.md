@@ -2,7 +2,7 @@
 
 ### First:
 
-* Clone this package to: `~/Projects/dotfiles` (unless you want to modify the dir paths for the scripts)
+* Clone this package to: `~/workspace/dotfiles` (unless you want to modify the dir paths for the scripts)
 * Create file `~/.private-env` and add `SSH_KEY`:
 ```
 export SSH_KEY=`<my-ssh-key>`
@@ -12,7 +12,7 @@ export SSH_KEY=`<my-ssh-key>`
 
 ```
 export MY_SCRIPTS_DIR="${HOME}/scripts"
-export DOTFILES_PACKAGE_DIR="${HOME}/Projects/dotfiles"
+export DOTFILES_PACKAGE_DIR="${HOME}/workspace/dotfiles"
 ```
 
 ### Zsh
