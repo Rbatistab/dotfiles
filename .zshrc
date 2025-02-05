@@ -11,7 +11,7 @@ fi
 # My scripts
 export MY_SCRIPTS_DIR="${HOME}/scripts"
 # My dotfiles package
-export DOTFILES_PACKAGE_DIR="${HOME}/Projects/dotfiles"
+export DOTFILES_PACKAGE_DIR="${HOME}/workspace/dotfiles"
 
 # Source of Config files under 'zshrc'
 ZSHRC_DIR="${HOME}/.zsh_config"
