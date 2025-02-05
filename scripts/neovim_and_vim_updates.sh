@@ -20,7 +20,7 @@ neovim_and_vim_package_to_local() {
   cp -r ${PACKAGE_VIMRC_FILE} ${LOCAL_VIMRC_FILE} 
 
   echo "Copying '.ideavimrc' file..."
-  cp -r ${PACKAGE_VIMRC_FILE} ${LOCAL_VIMRC_FILE} 
+  cp -r ${PACKAGE_IDEAVIMRC_FILE} ${LOCAL_IDEAVIMRC_FILE} 
 
   echo "Copying nvchad files from package to local..."
   rsync -a --delete ${PACKAGE_NVCHAD_DIR}/ ${LOCAL_NVCHAD_DIR}
@@ -32,7 +32,7 @@ neovim_and_vim_local_to_package() {
   cp -r ${LOCAL_VIMRC_FILE} ${PACKAGE_VIMRC_FILE} 
 
   echo "Copying '.ideavimrc' file..."
-  cp -r ${LOCAL_VIMRC_FILE} ${PACKAGE_VIMRC_FILE} 
+  cp -r ${LOCAL_IDEAVIMRC_FILE} ${PACKAGE_IDEAVIMRC_FILE} 
 
   echo "Copying nvchad files from local to package..."
   rsync -a --delete ${LOCAL_NVCHAD_DIR}/ ${PACKAGE_NVCHAD_DIR}
